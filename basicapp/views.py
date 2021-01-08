@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+from . import forms
+
+def index(request):
+    return render(request, 'basicappindex.html')
